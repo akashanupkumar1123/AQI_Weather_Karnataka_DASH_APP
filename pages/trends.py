@@ -3,7 +3,7 @@ from dash import html, dcc, Input, Output
 import dash_bootstrap_components as dbc
 
 # Register this file as a Dash page with path "/trends"
-dash.register_page(name, path='/trends', name='📈 Trends')
+dash.register_page(__name__, path='/trends', name='📈 Trends')
 
 # Precomputed summaries and notable annotations for Bengaluru and Mysuru
 SUMMARY_STATS = {
