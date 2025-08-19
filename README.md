@@ -1,5 +1,5 @@
 # 🌫 Karnataka AQI Analyzer Dashboard  
-![Karnataka AQI Analyzer Banner](./assets/karnataka_aqi_banner.png)
+
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)]()  
 [![Dash](https://img.shields.io/badge/Dash-v2.10-blue.svg)]()  
