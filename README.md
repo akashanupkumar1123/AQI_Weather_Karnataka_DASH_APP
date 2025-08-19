@@ -52,20 +52,21 @@ This dashboard uses modern Python tooling to combine:
 
 Karnataka_AQI_Analyzer/
 │
-├── app.py # Main Dash app setup and layout
-├── cache_config.py # Cache initialization and configuration
-├── mlflow_utils.py # MLflow CSV data utils for experiment metrics
-├── utils.py # Data loading, preprocessing, prediction helpers
-├── pages/ # Multi-page Dash app components
-│ ├── about.py # About page with MLflow experiment summaries
-│ ├── city_snapshot.py # City live snapshot with weather & AQI visualizations
-│ ├── predictor.py # AQI predictor page with pollutant inputs and forecasts
-│ └── trends.py # AQI trends with historical views and annotations
-├── models/ # Pretrained TensorFlow LSTM and LightGBM models
-├── assets/ # Static CSS, JavaScript, images, and favicon files
-├── data/ # AQI and weather datasets & plot images
-├── requirements.txt # Python package dependencies
-└── README.md # Project documentation and instructions
+├── app.py                      # Main Dash app setup and layout
+├── cache_config.py             # Cache initialization and configuration
+├── mlflow_utils.py             # MLflow CSV utilities for experiment metrics
+├── utils.py                    # Data loading, preprocessing, prediction helpers
+├── pages/                      # Dash app page components
+│   ├── about.py                # About page
+│   ├── city_snapshot.py        # City snapshot page
+│   ├── predictor.py            # AQI predictor page
+│   └── trends.py               # AQI trends page
+├── models/                     # Saved ML models (LSTM, LightGBM)
+├── assets/                     # CSS, JS, images, favicon, static files
+├── data/                       # Raw and processed AQI and weather data
+├── requirements.txt            # Python package dependencies
+└── README.md                   # Project documentation
+
 
 
 ## Getting Started  
