@@ -11,7 +11,7 @@ from utils import (
 )
 
 # Register this file as a Dash page with path "/"
-dash.register_page(name, path="/", name="🔮 Predictor")
+dash.register_page(__name__, path="/", name="🔮 Predictor")
 
 # Feature and label definitions for pollutant inputs
 FEATURE_NAMES = ["pm2.5", "co", "pm10", "no2", "o3", "so2"]
