@@ -1,0 +1,12 @@
+import requests
+
+API_KEY = "fc1e091bb2082eaddf7fa77313b51974"
+city = "Bangalore"
+state = "Karnataka"
+country = "India"
+
+url = f"https://api.airvisual.com/v2/city?city={city}&state={state}&country={country}&key={API_KEY}"
+response = requests.get(url)
+
+print(response.status_code)
+print(response.json())

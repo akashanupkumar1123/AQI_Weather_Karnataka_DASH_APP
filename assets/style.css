@@ -1,0 +1,150 @@
+/* === Global Background & Font === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* === Header Glows === */
+h1, h2, h3, h4, h5 {
+    color: #00ffe1;
+    text-shadow: 0 0 5px #00ffe1, 0 0 10px #00ffe1;
+}
+
+/* === Buttons Glow === */
+button, .btn, .dash-button {
+    background: #00ffe1;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* === Input Fields === */
+input[type="number"], input[type="text"], input[type="email"], 
+.Select-control, .dash-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #00ffe1;
+    border: 1px solid #00ffe1;
+    border-radius: 8px;
+    padding: 8px;
+    caret-color: #00ffe1; /* Cursor color */
+}
+
+/* === Input Placeholders (including manual inputs in predictor) === */
+input::placeholder {
+    color: #d13b3b !important; /* Red placeholder color for emphasis */
+    opacity: 1 !important;
+}
+
+/* For older browsers or fallback */
+input::-webkit-input-placeholder { color: #d13b3b !important; }
+input::-moz-placeholder          { color: #d13b3b !important; }
+input:-moz-placeholder           { color: #d13b3b !important; }
+input:-ms-input-placeholder      { color: #d13b3b !important; }
+
+/* === Glassmorphism Cards === */
+.card, .dbc-card, .card-body {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 255, 225, 0.1);
+    backdrop-filter: blur(5px);
+    margin-bottom: 20px;
+}
+
+/* === Particle Background Layer === */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* === Fix Dark Text Visibility for Non-Heading Text === */
+label, .form-label, .card-body, p, span, 
+.nav-link, .navbar-brand, .nav-link.active, .dash-text {
+    color: #ffffff !important;
+}
+
+/* === Slider Tick Labels === */
+.rc-slider-mark-text {
+    color: #ffffff !important;
+}
+
+/* === Dropdowns and Select Boxes === */
+.Select-menu-outer, .Select-control, .Select-placeholder, .Select-value {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: #00ffe1 !important;
+    border-color: #00ffe1 !important;
+}
+
+/* === Navbar Branding === */
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* === Loading Spinner Color (white on dark bg) === */
+._dash-loading {
+    color: #ffffff;
+}
+
+/* === Additional tweaks to improve UX === */
+
+/* Make dropdown arrows visible on dark bg */
+.Select-arrow-zone {
+    color: #00ffe1 !important;
+}
+
+/* Adjust buttons inside Dash/Bootstrap for better alignment */
+.dash-button {
+    min-width: 100px;
+}
+
+/* Adjust card headers for consistent highlight */
+.card-header, .dbc-card-header {
+    background: rgba(0, 255, 225, 0.1);
+    color: #00ffe1;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 255, 225, 0.2);
+}
+
+/* Focus style for inputs */
+input[type="number"]:focus, input[type="text"]:focus, .Select-control:focus, .dash-input:focus {
+    border-color: #00ffe1;
+    box-shadow: 0 0 8px #00ffe1;
+    outline: none;
+}
+
+/* Tooltip styling on slider */
+.rc-tooltip-inner {
+    background-color: #00ffe1 !important;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+/* Responsive text center utility for mobile */
+@media (max-width: 768px) {
+    .text-center {
+        text-align: center !important;
+    }
+}
+
+/* Fix margin collapsing for gap in flex container (bootstrap flex-wrap workaround) */
+.d-flex.flex-wrap.justify-content-center.gap-3 > * {
+    margin-bottom: 1rem;
+}
