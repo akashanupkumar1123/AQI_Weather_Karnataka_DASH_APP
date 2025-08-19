@@ -6,7 +6,7 @@ from cache_config import cache
 
 # = Initialize Dash App =
 app = dash.Dash(
-    name,
+    __name__,
     use_pages=True,  # Enable Dash pages system
     suppress_callback_exceptions=True,
     external_stylesheets=[dbc.themes.BOOTSTRAP]  # Use Bootstrap theme for styling
