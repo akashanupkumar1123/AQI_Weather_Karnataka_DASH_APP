@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 from mlflow_utils import list_experiments, get_latest_mlflow_stats
 
 # Register this file as a Dash page with path "/about"
-dash.register_page(name, path='/about', name='ℹ️ About')
+dash.register_page(__name__, path='/about', name='ℹ️ About')
 
 layout = html.Div(
     style={"padding": "2rem", "maxWidth": "900px", "margin": "auto"},
