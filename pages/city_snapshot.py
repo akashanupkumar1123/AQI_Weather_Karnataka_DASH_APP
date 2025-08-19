@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 from utils import fetch_live_weather, get_latest_data_for_lstm, predict_category, fetch_live_aqi_aqicn
 
 # Register this file as a Dash page with path "/city-snapshot"
-dash.register_page(name, path='/city-snapshot', name='🌆 City Snapshot')
+dash.register_page(__name__, path='/city-snapshot', name='🌆 City Snapshot')
 
 # Default pollutant values per city (can be adapted if you have live data)
 CITY_FEATURE_DEFAULTS = {
